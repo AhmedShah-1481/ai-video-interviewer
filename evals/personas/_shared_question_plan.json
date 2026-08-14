@@ -1,0 +1,12 @@
+{
+  "questions": [
+    {"id": "q1", "text": "Walk me through a project you shipped end to end — what was the architecture and what would you change now?", "competency": "shipping ability", "source": "resume", "source_reference": "resume: 'Built and deployed a RAG-based FAQ bot for a university club'", "difficulty": "easy", "follow_up_triggers": ["specific architecture", "what changed"]},
+    {"id": "q2", "text": "This role needs solid RAG fundamentals — how do you decide on a chunking strategy and how do you know your retrieval is actually good?", "competency": "technical depth", "source": "jd", "source_reference": "JD must-have: Understanding of RAG - chunking, embeddings, retrieval quality", "difficulty": "medium", "follow_up_triggers": ["chunk size reasoning", "retrieval evaluation method"]},
+    {"id": "q3", "text": "In your rag-faq-bot repo, chunking.py splits documents with a fixed 500-token window and no overlap. Walk me through why you picked that and what breaks with it.", "competency": "technical depth", "source": "github", "source_reference": "rag-faq-bot/chunking.py", "difficulty": "hard", "follow_up_triggers": ["overlap trade-off", "failure case"]},
+    {"id": "q4", "text": "Your llm_client.py has a retry loop that catches JSONDecodeError and retries once with a stricter prompt. Walk me through that commit and why you built it that way.", "competency": "debugging", "source": "github", "source_reference": "rag-faq-bot/llm_client.py, commit 'add retry on malformed JSON'", "difficulty": "hard", "follow_up_triggers": ["what failure it fixes", "why one retry not more"]},
+    {"id": "q5", "text": "Your README says the bot 'handles multi-turn conversations' but I don't see conversation state anywhere in the repo — can you show me where that lives?", "competency": "technical depth", "source": "github", "source_reference": "rag-faq-bot/README.md claim vs source: no session/history handling found in repo", "difficulty": "hard", "follow_up_triggers": ["where state lives", "admits gap"]},
+    {"id": "q6", "text": "Say a teammate reports the bot is suddenly returning irrelevant answers in production — walk me through how you'd debug that.", "competency": "debugging", "source": "scenario", "source_reference": "", "difficulty": "medium", "follow_up_triggers": ["systematic approach", "specific checks"]}
+  ],
+  "approved_by_human": true,
+  "edits_made": []
+}

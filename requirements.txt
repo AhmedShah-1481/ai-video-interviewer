@@ -1,0 +1,40 @@
+# Core graph + persistence
+langgraph>=0.6,<1.0
+langgraph-checkpoint-sqlite>=2.0,<4.0
+
+# LLM providers (choose one, but keeping both installed makes provider switching easy)
+groq>=0.31,<1.0
+anthropic>=0.60,<1.0
+
+# Resume/JD parsing and HTTP
+pdfplumber>=0.11,<1.0
+requests>=2.32,<3.0
+
+# Realtime: LiveKit (recommended) + Simli avatar + audio/STT/TTS
+# Pin these together: livekit contains the native WebRTC runtime, so an old
+# broad range can silently retain RTC bugs even when the Python API imports.
+livekit==1.1.14
+livekit-api==1.2.0
+websockets>=13.0,<15.0
+edge-tts>=7.0,<8.0
+pydub>=0.25,<1.0
+
+numpy>=2.0,<3.0
+Pillow>=10.0,<12.0
+
+# Legacy transport, only needed if REALTIME_MODE=daily — commented out by
+# default so a clean install doesn't hit the Windows daily-python build
+# problem. Uncomment if you deliberately switch back to the daily path.
+# daily-python>=0.14,<1.0
+
+# Report
+reportlab>=4.2,<5.0
+
+# MCP
+mcp>=1.0,<2.0
+
+# Testing
+pytest>=8.0,<10.0
+
+# Optional environment-file loading
+python-dotenv>=1.0,<2.0

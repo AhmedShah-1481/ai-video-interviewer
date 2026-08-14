@@ -1,0 +1,29 @@
+Junior AI Engineer — Northwind Labs, Karachi (0–2 years experience)
+
+About the role:
+Northwind Labs is hiring a Junior AI Engineer to join a small team building
+LLM-powered internal tools. You'll work across the stack: designing prompts,
+building retrieval pipelines, wiring up APIs, and shipping features end to end
+under senior review.
+
+Must-have skills:
+- Python fundamentals (data structures, OOP basics, writing clean functions)
+- Experience with an LLM framework — LangChain or LangGraph preferred
+- Understanding of RAG: chunking strategy, embeddings, retrieval quality,
+  and how to evaluate whether retrieved context is actually relevant
+- Comfortable with Git (branches, PRs, resolving conflicts) and consuming
+  REST APIs
+- At least one shipped project you can explain end to end — architecture,
+  trade-offs, what broke, what you'd do differently
+
+What we assess in the interview:
+- Technical depth (can you go beyond the surface-level explanation?)
+- Decomposition (can you break an ambiguous problem into steps?)
+- Shipping ability (did you actually finish something, not just prototype it?)
+- Debugging (how do you approach something that's broken?)
+- Communication (can you explain technical decisions to a non-expert?)
+
+Nice-to-haves:
+- Experience with vector databases (FAISS, Chroma, pgvector, etc.)
+- Exposure to evaluation/testing for LLM pipelines
+- Familiarity with Docker and basic deployment

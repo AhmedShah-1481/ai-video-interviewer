@@ -1,0 +1,22 @@
+{
+  "persona": "weak",
+  "candidate_name": "Hamza Sheikh",
+  "role_title": "Junior AI Engineer",
+  "expected": {"rank": 5, "recommendation": "no_hire", "note": "Lowest, no_hire"},
+  "transcript": {"turns": [
+    {"speaker": "agent", "text": "Walk me through a project you shipped end to end — what was the architecture and what would you change now?", "timestamp_ms": 1000, "node": "resume_probe", "interrupted": false},
+    {"speaker": "candidate", "text": "I made a chatbot thing, it uses AI to answer questions. I don't really remember all the details, my friend helped me set some of it up.", "timestamp_ms": 1500, "node": "resume_probe", "interrupted": false},
+    {"speaker": "agent", "text": "This role needs solid RAG fundamentals — how do you decide on a chunking strategy and how do you know your retrieval is actually good?", "timestamp_ms": 2000, "node": "jd_fit", "interrupted": false},
+    {"speaker": "candidate", "text": "Chunking... is that like splitting the data? I'm not really sure how I decide that, I think it's just kind of automatic in the library I used.", "timestamp_ms": 2500, "node": "jd_fit", "interrupted": false},
+    {"speaker": "agent", "text": "In your rag-faq-bot repo, chunking.py splits documents with a fixed 500-token window and no overlap. Walk me through why you picked that and what breaks with it.", "timestamp_ms": 3000, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "candidate", "text": "I don't remember writing that file specifically, it might have been copied from a tutorial. I'm not sure what would break honestly.", "timestamp_ms": 3500, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "agent", "text": "Your llm_client.py has a retry loop that catches JSONDecodeError and retries once with a stricter prompt. Walk me through that commit and why you built it that way.", "timestamp_ms": 4000, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "candidate", "text": "I don't know, I don't remember that part of the code at all.", "timestamp_ms": 4500, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "agent", "text": "Your README says the bot 'handles multi-turn conversations' but I don't see conversation state anywhere in the repo — can you show me where that lives?", "timestamp_ms": 5000, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "candidate", "text": "I'm not sure, maybe it's in one of the files somewhere, I didn't write the README myself.", "timestamp_ms": 5500, "node": "github_deepdive", "interrupted": false},
+    {"speaker": "agent", "text": "Say a teammate reports the bot is suddenly returning irrelevant answers in production — walk me through how you'd debug that.", "timestamp_ms": 6000, "node": "scenario", "interrupted": false},
+    {"speaker": "candidate", "text": "I guess I'd just restart it and see if that fixes it, or ask someone else to look at it with me.", "timestamp_ms": 6500, "node": "scenario", "interrupted": false},
+    {"speaker": "agent", "text": "That's everything I had. Do you have any questions for me about the role or team?", "timestamp_ms": 7000, "node": "candidate_qs", "interrupted": false},
+    {"speaker": "candidate", "text": "No, not really.", "timestamp_ms": 7500, "node": "candidate_qs", "interrupted": false}
+  ]}
+}
